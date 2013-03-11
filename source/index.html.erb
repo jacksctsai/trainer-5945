@@ -1,0 +1,114 @@
+---
+title: 5945 呼叫師傅
+---
+
+<div id="header">
+  <div id="header-wrap">
+    <ul id="menu">
+      <li id="home" class="menu-item">
+        <h1><a href="#" id="menu-home" class="link-menu" title="Home">5945 呼叫師傅</a></h1>
+      </li>
+      <li id="search" class="menu-item">
+        <a href="#" id="menu-search" class="link-menu" title="搜尋師傅">搜尋師傅</a>
+      </li>
+      <li id="filter" class="menu-item">
+        <a href="#" id="menu-filter" class="link-menu" title="嚴選師傅">嚴選師傅</a>
+      </li>
+      <li id="request-form" class="menu-item">
+        <a href="#" id="menu-request-form" class="link-menu" title="填需求單">填需求單</a>
+      </li>
+      <li id="wiki" class="menu-item">
+        <a href="#" id="menu-wiki" class="link-menu" title="裝修百科">裝修百科</a>
+      </li>
+    </ul>
+    <a href="#" id="link-facebook-login">Login with Facebook</a>
+  </div>
+</div>
+<div id="search-panel">
+  <img id="search-panel-logo" src="/img/sprite/logo.png" alt="呼叫師傅 Logo">
+  <div id="search-panel-form">
+    <p id="search-prompt">你要找什麼師傅？</p>
+    <form action="#" id="search-form">
+      <input type="text" id="search-box" placeholder="內湖 抓漏">
+      <input type="submit" id="search-btn" value="搜尋師傅" />
+    </form>
+    <div id="hot-title">熱門查詢：</div>
+    <div id="hot-keywords">
+      <% data.keywords.each do |k| %><a href="#" class="keyword" title="<%= k %>"><%= k %></a> <% end %>... 或直接<a href="#" id="new-request-form" title="填需求單">填需求單</a>
+    </div>
+  </div>
+</div>
+<div id="body">
+  <div id="left-column">
+    <div class="block" id="suggestion">
+      <div id="suggestion-title">好評回饋</div>
+      <div id="suggestion-content">台北市內湖區的飲隆水電行，聯絡後反應快速，馬上解決本人漏水問題且收費合理，值得推薦給內湖的鄉親!!<br><a href="#" id="suggestion-user" title="推薦">3D 於 3/20/2011 推薦</a></div>
+      <div class="block-footer"><a href="#" class="more-link" title="More">更多好評回饋 ▸</a></div>
+    </div>
+    <div id="partner" class="block">
+      <a href="#" id="partner-img" alt="合作夥伴">合作夥伴－大衛麥可國際設計工程有限公司設計師：張常嫻</a>
+      <a href="#" id="partner-link" title="合作夥伴">大衛麥可國際設計工程有限公司設計師：張常嫻</a>
+      <a href="#" id="partner-source-link" title="來源">(來源:樂屋網裝潢show)</a>
+    </div>
+  </div>
+  <div id="master">
+    <div id="master-title">嚴選師傅</div>
+    <div id="masters">
+      <% data.masters.each do |m| %>
+      <a id="<%= m.id %>" href="#" class="master-clip" title="<%= m.content %>"><%= m.content %></a>
+      <% end %>
+    </div>
+    <div id="master-footer"><a href="#" class="more-link" title="More">更多嚴選師傅 ▸</a></div>
+  </div>
+  <div id="right-column">
+    <div class="block" id="request-form-block">
+      <div id="request-form-block-title">填需求單</div>
+      <div id="request-form-block-content">為了更便於大家找尋師傅，5945呼叫師傅提供大家直接填寫需求單，我們將根據您的需求直接推薦您相關工種的師傅。</div>
+      <a href="#" id="request-form-block-new" title="填需求單">填寫需求</a>
+    </div>
+    <div class="block" id="reference">
+      <div id="reference-title">系列專文</div>
+      <div id="reference-content">5945呼叫師傅每週固定於<a href="#" class="normal-link" title="Yahoo房地產">Yahoo房地產</a>發表專文, 提供裝修相關的專文介紹：</div>
+      <a href="#" id="link-yahoo-house" title="Y!房地產專文">Y!房地產專文</a>
+      <div id="reference-list">
+        <% data.yahooposts.each do |p| %>
+        <a href="#" class="reference-link" title="<%= p.content %>">[<%= p.date %>]<%= p.content %> ▸</a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div id="related-links">
+    <div id="site-map">
+      <a href="#" id="rl-home" class="link-related" title="首頁">首頁</a>
+      <a href="#" id="rl-about" class="link-related" title="關於我們">關於我們</a>
+      <a href="#" id="rl-contact" class="link-related" title="聯絡我們">聯絡我們</a>
+      <a href="#" id="rl-terms" class="link-related" title="服務條款">服務條款</a>
+      <a href="#" id="rl-privacy" class="link-related" title="隱私權政策">隱私權政策</a>
+      <a href="#" id="rl-master-enlish" class="link-related" title="師傅刊登">師傅刊登</a>
+      <a href="#" id="rl-master-comment" class="link-related" title="評論師傅">評論師傅</a>
+    </div>
+    <div id="social-networks">
+      <a href="#" id="sn-facebook" class="link-sn" title="Facebook">Facebook</a>
+      <a href="#" id="sn-twitter" class="link-sn" title="Twitter">Twitter</a>
+      <a href="#" id="sn-youtube" class="link-sn" title="Youtube">Youtube</a>
+      <a href="#" id="sn-plurk" class="link-sn" title="Plurk">Plurk</a>
+    </div>
+  </div>
+  <div id="copyright">Copyright &copy; 2010-2011 5945呼叫師傅 All Rights Reserved.</div>
+  <div id="supporter">
+    <div id="media-reports">
+      <p id="media-report-title">媒體報導</p>
+      <% data.medias.each do |m| %>
+      <a href="#" id="m-<%= m.id %>" class="link-media" title="<%= m.name %>"><%= m.name %></a>
+      <% end %>
+    </div>
+    <div id="partnership">
+      <p id="partnership-title">合作夥伴</p>
+      <% data.partnerships.each do |p| %>
+      <a href="#" id="ps-<%= p.id %>" class="link-partnership" title="<%= p.name %>"><%= p.name %></a>
+      <% end %>
+    </div>
+  </div>
+</div>

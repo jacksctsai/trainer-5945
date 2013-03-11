@@ -1,0 +1,421 @@
+@import compass
+@import compass/reset
+
+$default-font: Arial, Helvetica, sans-serif
+$grey: grey
+$highlight: rgb( 76, 182, 231 )
+
+#header
+  background-color: $highlight
+  height: 45px
+
+#header-wrap
+  +clearfix
+  margin: 0 auto
+  padding: 3px
+  width: 1040px
+
+#menu
+  +clearfix
+  float: left
+
+.menu-item
+  height: 25px
+  padding: 10px
+  float: left
+  width: 75px
+
+.link-menu
+  color: white
+  font-family: $default-font
+  font-size: 18px
+  text-decoration: none
+
+#home
+  width: 130px
+  height: 37px
+
+#menu-home
+  +hide-text
+  background: url( "/img/sprite/sublogo.png" )
+  display: block
+  width: 111px
+  height: 17px
+
+#link-facebook-login
+  +hide-text
+  background: url( "/img/sprite/fb.png" ) no-repeat
+  background-position: top 8px left
+  float: right
+  height: 22px
+  padding: 8px 40px 0 0
+  width: 58px
+
+#search-panel
+  +clearfix
+  width: 800px
+  margin: 0 auto
+  padding: 50px 0 0 30px
+
+#search-panel-logo
+  display: block
+  float: left
+  padding: 0 20px 0 160px
+
+#search-prompt
+  font-family: $default-font
+  font-size: 18px
+  font-weight: bold
+
+#search-box
+  border: 1px solid grey
+  border-radius: 5px
+  display: block
+  float: left
+  font-size: 22px
+  height: 33px
+  width: 350px
+
+#search-btn
+  +clearfix
+  +hide-text
+  background: url( "/img/sprite/search.png" ) no-repeat
+  background-position: top left 5px
+  border: 0
+  display: block
+  float: left
+  height: 33px
+  width: 85px
+  padding: 0 0 0 5px
+
+#search-panel-form
+  +clearfix
+
+#hot-title
+  clear: both
+  float: left
+  font-family: $default-font
+  font-size: 15px
+  line-height: 22px
+  padding: 10px 0 0
+
+#hot-keywords
+  float: left
+  font-family: $default-font
+  font-size: 15px
+  line-height: 22px
+  padding: 10px 0 0
+  width: 280px
+
+.keyword
+  color: #a6aaae
+  text-decoration: none
+
+#new-request-form
+  color: rgb( 76, 182, 231 )
+  text-decoration: none
+
+#body
+  +clearfix
+  background: url( "/img/header-bg.png" ) no-repeat
+  background-position: top center
+  padding: 60px 0 0
+  margin: 0 auto
+  width: 1060px
+
+#left-column
+  +clearfix
+  border-right: 1px solid #c0c0c0
+  float: left
+  padding: 15px 30px
+  width: 120px
+
+#suggestion
+  font-family: $default-font
+  font-size: 14px
+  padding: 0 0 20px
+
+#suggestion-title
+  font-weight: bold
+  padding: 10px 0 15px
+
+#suggestion-content
+
+#suggestion-user
+  color: rgb( 76, 136, 231 )
+  display: block
+  text-decoration: none
+  padding: 10px 0
+
+.more-link
+  color: grey
+  font-family: $default-font
+  font-size: 12px
+  text-decoration: none
+
+#partner-img
+  +hide-text
+  background: url( "/img/sidebar-photo.png" ) no-repeat
+  display: block
+  height: 101px
+  width: 77px
+
+#partner-link
+  display: block
+  font-family: $default-font
+  font-size: 13px
+  line-height: 16px
+  text-decoration: none
+
+#partner-source-link
+  display: block
+  font-family: $default-font
+  font-size: 13px
+  line-height: 16px
+  text-decoration: none
+
+#master
+  +clearfix
+  float: left
+  padding: 0 0 30px 30px
+  width: 660px
+
+#master-title
+  font-size: 15px
+  font-weight: bold
+  padding: 23px 0 15px
+
+.master-clip
+  +clearfix
+  color: black
+  display: block
+  font-family: $default-font
+  font-size: 13px
+  float: left
+  height: 50px
+  padding: 145px 32px 0 0
+  text-decoration: none
+  width: 186px
+
+#master-footer
+  clear: both
+
+#master-1
+  background: url( "/img/gallery-1.png" ) no-repeat
+
+#master-2
+  background: url( "/img/gallery-2.png" ) no-repeat
+
+#master-3
+  background: url( "/img/gallery-3.png" ) no-repeat
+
+#master-4
+  background: url( "/img/gallery-4.png" ) no-repeat
+
+#master-5
+  background: url( "/img/gallery-5.png" ) no-repeat
+
+#master-6
+  background: url( "/img/gallery-6.png" ) no-repeat
+
+#master-7
+  background: url( "/img/gallery-7.png" ) no-repeat
+
+#master-8
+  background: url( "/img/gallery-8.png" ) no-repeat
+
+#master-9
+  background: url( "/img/gallery-9.png" ) no-repeat
+
+#right-column
+  +clearfix
+  border-left: 1px solid #c0c0c0
+  float: left
+  float: left
+  width: 180px
+
+#request-form-block
+  font-family: $default-font
+  font-size: 13px
+  padding: 13px 15px 15px 20px
+
+#request-form-block-title
+  font-size: 15px
+  font-weight: bold
+  padding: 15px
+
+#request-form-block-new
+  +clearfix
+  +hide-text
+  background: url( "/img/sprite/need.png" ) no-repeat
+  background-position: top 10px center
+  display: block
+  height: 30px
+  padding: 10px 0 0
+  width: 68px
+
+#reference
+  font-family: $default-font
+  font-size: 14px
+  line-height: 18px
+  padding: 13px 15px 15px 20px
+  width: 130px
+
+#reference-title
+  font-size: 15px
+  font-weight: bold
+  padding: 15px
+
+#link-yahoo-house
+  +hide-text
+  background: url( "/img/sprite/yahoo.png" ) no-repeat
+  background-position: top 10px center
+  display: block
+  height: 30px
+  padding: 10px 0
+  width: 97px
+
+#reference-list
+  padding: 10px 0
+
+.reference-link
+  color: $grey
+  display: block
+  font-family: $default-font
+  font-size: 12px
+  line-height: 20px
+  text-decoration: none
+
+#footer
+  background: url( "/img/footer-bg.png" ) no-repeat
+  background-position: top center
+  padding: 20px 0
+
+#related-links
+  +clearfix
+  margin: 0 auto
+  width: 510px
+
+.link-related
+  color: $grey
+  font-family: $default-font
+  font-size: 13px
+  font-weight: bold
+  text-decoration: none
+  padding: 0 2px
+
+#site-map
+  +clearfix
+  float: left
+  padding: 3px 0 0
+
+#social-networks
+  +clearfix
+  float: left
+  width: 85px
+  padding: 0 0 0 15px
+
+.link-sn
+  +hide-text
+  display: block
+  float: left
+  height: 17px
+  width: 17px
+  padding: 0 2px
+
+#sn-facebook
+  background: url( "/img/sprite/fb-logo.png" ) no-repeat
+
+#sn-twitter
+  background: url( "/img/sprite/twitter-logo.png" ) no-repeat
+
+#sn-youtube
+  background: url( "/img/sprite/youtube-logo.png" ) no-repeat
+
+#sn-plurk
+  background: url( "/img/sprite/plurk-logo.png" ) no-repeat
+  width: 18px
+
+#copyright
+  clear: both
+  font-family: $default-font
+  font-size: 12px
+  padding: 20px 0
+  text-align: center
+
+#supporter
+  +clearfix
+  margin: 0 auto
+  width: 910px
+
+#media-reports
+  float: left
+  width: 550px
+
+#media-report-title
+  font-family: $default-font
+  font-size: 13px
+  font-weight: bold
+  float: left
+  padding: 5px 10px 0 0
+
+#partnership
+  float: left
+  width: 350px
+
+#partnership-title
+  font-family: $default-font
+  font-size: 13px
+  font-weight: bold
+  float: left
+  padding: 5px 10px 0 0
+
+.link-media
+  +hide-text
+  display: block
+  float: left
+
+.link-partnership
+  +hide-text
+  display: block
+  float: left
+
+#m-nextmedia
+  background: url( "/img/sprite/media-1.png" )
+  height: 22px
+  width: 59px
+
+#m-fm975
+  background: url( "/img/sprite/media-2.png" )
+  height 22px
+  width: 109px
+
+#m-tech-orange
+  background: url( "/img/sprite/media-3.png" )
+  height: 22px
+  width: 100px
+
+#m-tech-note
+  background: url( "/img/sprite/media-4.png" )
+  height: 22px
+  width: 111px
+
+#m-cti-tv
+  background: url( "/img/sprite/media-5.png" )
+  height: 22px
+  width: 73px
+
+#ps-yahoo
+  background: url( "/img/sprite/media-6.png" )
+  height: 22px
+  width: 93px
+
+#ps-rakura
+  background: url( "/img/sprite/media-7.png" )
+  height: 22px
+  width: 126px
+
+#ps-bid
+  background: url( "/img/sprite/media-8.png" )
+  height: 22px
+  width: 56px
