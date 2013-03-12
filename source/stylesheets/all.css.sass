@@ -142,10 +142,11 @@ $highlight: rgb( 76, 182, 231 )
 #suggestion-content
 
 #suggestion-user
-  color: rgb( 76, 136, 231 )
-  display: block
-  text-decoration: none
   padding: 10px 0
+
+#suggestion-user-link
+  color: rgb( 76, 136, 231 )
+  text-decoration: none
 
 .more-link
   color: grey
@@ -161,14 +162,12 @@ $highlight: rgb( 76, 182, 231 )
   width: 77px
 
 #partner-link
-  display: block
   font-family: $default-font
   font-size: 13px
   line-height: 16px
   text-decoration: none
 
 #partner-source-link
-  display: block
   font-family: $default-font
   font-size: 13px
   line-height: 16px
@@ -187,15 +186,16 @@ $highlight: rgb( 76, 182, 231 )
 
 .master-clip
   +clearfix
-  color: black
-  display: block
-  font-family: $default-font
-  font-size: 13px
   float: left
   height: 50px
   padding: 145px 32px 0 0
-  text-decoration: none
   width: 186px
+
+.master-clip-link
+  color: black
+  font-family: $default-font
+  font-size: 13px
+  text-decoration: none
 
 #master-footer
   clear: both
@@ -280,13 +280,13 @@ $highlight: rgb( 76, 182, 231 )
 
 .reference-link
   color: $grey
-  display: block
   font-family: $default-font
   font-size: 12px
   line-height: 20px
   text-decoration: none
 
 #footer
+  +clearfix
   background: url( "/img/footer-bg.png" ) no-repeat
   background-position: top center
   padding: 20px 0
@@ -337,6 +337,7 @@ $highlight: rgb( 76, 182, 231 )
   width: 18px
 
 #copyright
+  +clearfix
   clear: both
   font-family: $default-font
   font-size: 12px
@@ -360,6 +361,7 @@ $highlight: rgb( 76, 182, 231 )
   padding: 5px 10px 0 0
 
 #partnership
+  +clearfix
   float: left
   width: 350px
 
