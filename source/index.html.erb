@@ -33,22 +33,25 @@ title: 5945 呼叫師傅
       <input type="submit" id="search-btn" value="搜尋師傅" />
     </form>
     <div id="hot-title">熱門查詢：</div>
-    <div id="hot-keywords">
-      <% data.keywords.each do |k| %><a href="#" class="keyword" title="<%= k %>"><%= k %></a> <% end %>... 或直接<a href="#" id="new-request-form" title="填需求單">填需求單</a>
-    </div>
+    <div id="hot-keywords"><% data.keywords.each do |k| %><a href="#" class="keyword" title="<%= k %>"><%= k %></a> <% end %>... 或直接<a href="#" id="new-request-form" title="填需求單">填需求單</a></div>
   </div>
 </div>
 <div id="body">
   <div id="left-column">
     <div class="block" id="suggestion">
       <div id="suggestion-title">好評回饋</div>
-      <div id="suggestion-content"><p>台北市內湖區的飲隆水電行，聯絡後反應快速，馬上解決本人漏水問題且收費合理，值得推薦給內湖的鄉親!!
-        </p><p id="suggestion-user"><a href="#" id="suggestion-user-link" title="推薦">3D 於 3/20/2011 推薦</a></p></div>
-      <div class="block-footer"><a href="#" class="more-link" title="More">更多好評回饋 ▸</a></div>
+      <div id="suggestion-content">
+        <p>台北市內湖區的飲隆水電行，聯絡後反應快速，馬上解決本人漏水問題且收費合理，值得推薦給內湖的鄉親!!</p>
+        <p id="suggestion-user"><a href="#" id="suggestion-user-link" title="推薦">3D 於 3/20/2011 推薦</a></p>
+      </div>
+      <div class="block-footer">
+        <a href="#" class="more-link" title="More">更多好評回饋 ▸</a>
+      </div>
     </div>
     <div id="partner" class="block">
       <a href="#" id="partner-img" alt="合作夥伴">合作夥伴－大衛麥可國際設計工程有限公司設計師：張常嫻</a>
-      <a href="#" id="partner-link" title="合作夥伴">大衛麥可國際設計工程有限公司設計師：張常嫻</a><br>
+      <a href="#" id="partner-link" title="合作夥伴">大衛麥可國際設計工程有限公司設計師：張常嫻</a>
+      <br>
       <a href="#" id="partner-source-link" title="來源">(來源:樂屋網裝潢show)</a>
     </div>
   </div>
@@ -75,7 +78,9 @@ title: 5945 呼叫師傅
       <a href="#" id="link-yahoo-house" title="Y!房地產專文">Y!房地產專文</a>
       <div id="reference-list">
         <% data.yahooposts.each do |p| %>
-        <p><a href="#" class="reference-link" title="<%= p.content %>">[<%= p.date %>]<%= p.content %> ▸</a></p>
+        <p>
+          <a href="#" class="reference-link" title="<%= p.content %>">[<%= p.date %>]<%= p.content %> ▸</a>
+        </p>
         <% end %>
       </div>
     </div>

@@ -11,24 +11,24 @@ $highlight: rgb( 76, 182, 231 )
 
 #header-wrap
   +clearfix
-  margin: 0 auto
-  padding: 3px
   width: 1040px
+  padding: 3px
+  margin: 0 auto
 
 #menu
   +clearfix
-  float: left
+  +float-left
 
 .menu-item
+  +float-left
+  width: 75px
   height: 25px
   padding: 10px
-  float: left
-  width: 75px
 
 .link-menu
-  color: white
   font-family: $default-font
   font-size: 18px
+  color: white
   text-decoration: none
 
 #home
@@ -44,22 +44,22 @@ $highlight: rgb( 76, 182, 231 )
 
 #link-facebook-login
   +hide-text
+  +float-right
   background: url( "/img/sprite/fb.png" ) no-repeat
   background-position: top 8px left
-  float: right
+  width: 58px
   height: 22px
   padding: 8px 40px 0 0
-  width: 58px
 
 #search-panel
   +clearfix
   width: 800px
-  margin: 0 auto
   padding: 50px 0 0 30px
+  margin: 0 auto
 
 #search-panel-logo
+  +float-left
   display: block
-  float: left
   padding: 0 20px 0 160px
 
 #search-prompt
@@ -67,45 +67,48 @@ $highlight: rgb( 76, 182, 231 )
   font-size: 18px
   font-weight: bold
 
+#search-form
+  +clearfix
+
 #search-box
+  +float-left
   border: 1px solid grey
   border-radius: 5px
-  display: block
-  float: left
   font-size: 22px
-  height: 33px
+  display: block
   width: 350px
+  height: 33px
 
 #search-btn
-  +clearfix
   +hide-text
+  +clearfix
+  +float-left
   background: url( "/img/sprite/search.png" ) no-repeat
   background-position: top left 5px
   border: 0
   display: block
-  float: left
-  height: 33px
   width: 85px
+  height: 33px
   padding: 0 0 0 5px
 
 #search-panel-form
   +clearfix
 
 #hot-title
-  clear: both
-  float: left
+  +float-left
   font-family: $default-font
   font-size: 15px
   line-height: 22px
+  clear: both
   padding: 10px 0 0
 
 #hot-keywords
-  float: left
+  +float-left
   font-family: $default-font
   font-size: 15px
   line-height: 22px
-  padding: 10px 0 0
   width: 280px
+  padding: 10px 0 0
 
 .keyword
   color: #a6aaae
@@ -119,16 +122,16 @@ $highlight: rgb( 76, 182, 231 )
   +clearfix
   background: url( "/img/header-bg.png" ) no-repeat
   background-position: top center
+  width: 1060px
   padding: 60px 0 0
   margin: 0 auto
-  width: 1060px
 
 #left-column
   +clearfix
+  +float-left
   border-right: 1px solid #c0c0c0
-  float: left
-  padding: 15px 30px
   width: 120px
+  padding: 15px 30px
 
 #suggestion
   font-family: $default-font
@@ -139,8 +142,6 @@ $highlight: rgb( 76, 182, 231 )
   font-weight: bold
   padding: 10px 0 15px
 
-#suggestion-content
-
 #suggestion-user
   padding: 10px 0
 
@@ -149,17 +150,17 @@ $highlight: rgb( 76, 182, 231 )
   text-decoration: none
 
 .more-link
-  color: grey
   font-family: $default-font
   font-size: 12px
+  color: grey
   text-decoration: none
 
 #partner-img
   +hide-text
   background: url( "/img/sidebar-photo.png" ) no-repeat
   display: block
-  height: 101px
   width: 77px
+  height: 101px
 
 #partner-link
   font-family: $default-font
@@ -175,9 +176,9 @@ $highlight: rgb( 76, 182, 231 )
 
 #master
   +clearfix
-  float: left
-  padding: 0 0 30px 30px
+  +float-left
   width: 660px
+  padding: 0 0 30px 30px
 
 #master-title
   font-size: 15px
@@ -186,15 +187,15 @@ $highlight: rgb( 76, 182, 231 )
 
 .master-clip
   +clearfix
-  float: left
+  +float-left
+  width: 186px
   height: 50px
   padding: 145px 32px 0 0
-  width: 186px
 
 .master-clip-link
-  color: black
   font-family: $default-font
   font-size: 13px
+  color: black
   text-decoration: none
 
 #master-footer
@@ -229,9 +230,8 @@ $highlight: rgb( 76, 182, 231 )
 
 #right-column
   +clearfix
+  +float-left
   border-left: 1px solid #c0c0c0
-  float: left
-  float: left
   width: 180px
 
 #request-form-block
@@ -250,16 +250,16 @@ $highlight: rgb( 76, 182, 231 )
   background: url( "/img/sprite/need.png" ) no-repeat
   background-position: top 10px center
   display: block
+  width: 68px
   height: 30px
   padding: 10px 0 0
-  width: 68px
 
 #reference
   font-family: $default-font
   font-size: 14px
   line-height: 18px
-  padding: 13px 15px 15px 20px
   width: 130px
+  padding: 13px 15px 15px 20px
 
 #reference-title
   font-size: 15px
@@ -271,17 +271,17 @@ $highlight: rgb( 76, 182, 231 )
   background: url( "/img/sprite/yahoo.png" ) no-repeat
   background-position: top 10px center
   display: block
+  width: 97px
   height: 30px
   padding: 10px 0
-  width: 97px
 
 #reference-list
   padding: 10px 0
 
 .reference-link
-  color: $grey
   font-family: $default-font
   font-size: 12px
+  color: $grey
   line-height: 20px
   text-decoration: none
 
@@ -293,34 +293,34 @@ $highlight: rgb( 76, 182, 231 )
 
 #related-links
   +clearfix
-  margin: 0 auto
   width: 510px
+  margin: 0 auto
 
 .link-related
-  color: $grey
   font-family: $default-font
   font-size: 13px
   font-weight: bold
+  color: $grey
   text-decoration: none
   padding: 0 2px
 
 #site-map
   +clearfix
-  float: left
+  +float-left
   padding: 3px 0 0
 
 #social-networks
   +clearfix
-  float: left
+  +float-left
   width: 85px
   padding: 0 0 0 15px
 
 .link-sn
   +hide-text
+  +float-left
   display: block
-  float: left
-  height: 17px
   width: 17px
+  height: 17px
   padding: 0 2px
 
 #sn-facebook
@@ -338,86 +338,86 @@ $highlight: rgb( 76, 182, 231 )
 
 #copyright
   +clearfix
-  clear: both
   font-family: $default-font
   font-size: 12px
-  padding: 20px 0
   text-align: center
+  clear: both
+  padding: 20px 0
 
 #supporter
   +clearfix
-  margin: 0 auto
   width: 910px
+  margin: 0 auto
 
 #media-reports
-  float: left
+  +float-left
   width: 550px
 
 #media-report-title
+  +float-left
   font-family: $default-font
   font-size: 13px
   font-weight: bold
-  float: left
   padding: 5px 10px 0 0
 
 #partnership
   +clearfix
-  float: left
+  +float-left
   width: 350px
 
 #partnership-title
+  +float-left
   font-family: $default-font
   font-size: 13px
   font-weight: bold
-  float: left
   padding: 5px 10px 0 0
 
 .link-media
   +hide-text
+  +float-left
   display: block
-  float: left
 
 .link-partnership
   +hide-text
+  +float-left
   display: block
-  float: left
 
 #m-nextmedia
   background: url( "/img/sprite/media-1.png" )
-  height: 22px
   width: 59px
+  height: 22px
 
 #m-fm975
   background: url( "/img/sprite/media-2.png" )
-  height 22px
   width: 109px
+  height 22px
 
 #m-tech-orange
   background: url( "/img/sprite/media-3.png" )
-  height: 22px
   width: 100px
+  height: 22px
 
 #m-tech-note
   background: url( "/img/sprite/media-4.png" )
-  height: 22px
   width: 111px
+  height: 22px
 
 #m-cti-tv
   background: url( "/img/sprite/media-5.png" )
-  height: 22px
   width: 73px
+  height: 22px
 
 #ps-yahoo
   background: url( "/img/sprite/media-6.png" )
-  height: 22px
   width: 93px
+  height: 22px
 
 #ps-rakura
   background: url( "/img/sprite/media-7.png" )
-  height: 22px
   width: 126px
+  height: 22px
 
 #ps-bid
   background: url( "/img/sprite/media-8.png" )
-  height: 22px
   width: 56px
+  height: 22px
