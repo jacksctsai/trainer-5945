@@ -6,31 +6,43 @@ title: 5945 呼叫師傅
   <div id="header-wrap">
     <ul id="menu">
       <li id="home" class="menu-item">
-        <h1><a href="#" id="menu-home" class="link-menu" title="Home">5945 呼叫師傅</a></h1>
+        <h1>
+          <a href="#" id="menu-home" class="link-menu" title="Home">5945 呼叫師傅</a>
+        </h1>
       </li>
       <li id="search" class="menu-item">
-        <a href="#" id="menu-search" class="link-menu" title="搜尋師傅">搜尋師傅</a>
+        <h2>
+          <a href="#" id="menu-search" class="link-menu" title="搜尋師傅">搜尋師傅</a>
+        </h2>
       </li>
       <li id="filter" class="menu-item">
-        <a href="#" id="menu-filter" class="link-menu" title="嚴選師傅">嚴選師傅</a>
+        <h2>
+          <a href="#" id="menu-filter" class="link-menu" title="嚴選師傅">嚴選師傅</a>
+        </h2>
       </li>
       <li id="request-form" class="menu-item">
-        <a href="#" id="menu-request-form" class="link-menu" title="填需求單">填需求單</a>
+        <h2>
+          <a href="#" id="menu-request-form" class="link-menu" title="填需求單">填需求單</a>
+        </h2>
       </li>
       <li id="wiki" class="menu-item">
-        <a href="#" id="menu-wiki" class="link-menu" title="裝修百科">裝修百科</a>
+        <h2>
+          <a href="#" id="menu-wiki" class="link-menu" title="裝修百科">裝修百科</a>
+        </h2>
       </li>
     </ul>
     <a href="#" id="link-facebook-login">Login with Facebook</a>
   </div>
 </div>
 <div id="search-panel">
-  <img id="search-panel-logo" src="/img/sprite/logo.png" alt="呼叫師傅 Logo">
+  <div id="search-panel-logo">
+    <a href="#" id="search-panel-logo-link" title="5945 呼叫師傅">5945 呼叫師傅 Logo</a>
+  </div>
   <div id="search-panel-form">
     <p id="search-prompt">你要找什麼師傅？</p>
     <form action="#" id="search-form">
       <input type="text" id="search-box" placeholder="內湖 抓漏">
-      <input type="submit" id="search-btn" value="搜尋師傅" />
+      <a href="#" id="search-btn" title="搜尋師傅">搜尋師傅</a>
     </form>
     <div id="hot-title">熱門查詢：</div>
     <div id="hot-keywords"><% data.keywords.each do |k| %><a href="#" class="keyword" title="<%= k %>"><%= k %></a> <% end %>... 或直接<a href="#" id="new-request-form" title="填需求單">填需求單</a></div>
@@ -64,7 +76,9 @@ title: 5945 呼叫師傅
       </div>
       <% end %>
     </div>
-    <div id="master-footer"><a href="#" class="more-link" title="More">更多嚴選師傅 ▸</a></div>
+    <div id="master-footer">
+      <a href="#" class="more-link" title="More">更多嚴選師傅 ▸</a>
+    </div>
   </div>
   <div id="right-column">
     <div class="block" id="request-form-block">
@@ -98,10 +112,18 @@ title: 5945 呼叫師傅
       <a href="#" id="rl-master-comment" class="link-related" title="評論師傅">評論師傅</a>
     </div>
     <div id="social-networks">
-      <a href="#" id="sn-facebook" class="link-sn" title="Facebook">Facebook</a>
-      <a href="#" id="sn-twitter" class="link-sn" title="Twitter">Twitter</a>
-      <a href="#" id="sn-youtube" class="link-sn" title="Youtube">Youtube</a>
-      <a href="#" id="sn-plurk" class="link-sn" title="Plurk">Plurk</a>
+      <div class="sn-item">
+        <a href="#" id="sn-facebook" class="link-sn" title="Facebook">Facebook</a>
+      </div>
+      <div class="sn-item">
+        <a href="#" id="sn-twitter" class="link-sn" title="Twitter">Twitter</a>
+      </div>
+      <div class="sn-item">
+        <a href="#" id="sn-youtube" class="link-sn" title="Youtube">Youtube</a>
+      </div>
+      <div class="sn-item">
+        <a href="#" id="sn-plurk" class="link-sn" title="Plurk">Plurk</a>
+      </div>
     </div>
   </div>
   <div id="copyright">Copyright &copy; 2010-2011 5945呼叫師傅 All Rights Reserved.</div>
