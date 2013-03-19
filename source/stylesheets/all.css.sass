@@ -2,8 +2,8 @@
 @import compass/reset
 
 $default-font: Arial, Helvetica, sans-serif
-$grey: grey
-$highlight: rgb( 76, 182, 231 )
+$grey: #999
+$highlight: #4cb6e7
 
 #header
   background-color: $highlight
@@ -30,10 +30,10 @@ $highlight: rgb( 76, 182, 231 )
 .link-menu
   font-family: $default-font
   font-size: 18px
-  color: white
+  color: #fff
   text-decoration: none
   &:hover, &:active
-    border-bottom: 2px solid white
+    border-bottom: 2px solid #fff
 
 #home
   width: 130px
@@ -41,7 +41,7 @@ $highlight: rgb( 76, 182, 231 )
 
 #menu-home
   +hide-text
-  background: url( "/img/sprite/sublogo.png" ) no-repeat
+  background: image-url( "sprite/sublogo.png" ) no-repeat
   display: block
   width: 111px
   height: 17px
@@ -49,8 +49,8 @@ $highlight: rgb( 76, 182, 231 )
 
 #link-facebook-login
   +hide-text
-  background: url( "/img/sprite/fb.png" ) no-repeat
-  background-position: top -1px left -1px
+  background: image-url( "sprite/fb.png" ) no-repeat
+  background-position: -1px -1px
   display: block
   width: 56px
   height: 20px
@@ -58,7 +58,7 @@ $highlight: rgb( 76, 182, 231 )
   top: 8px
   right: 0
   &:hover, &:active
-    background-position: top left
+    background-position: 0 0
     width: 58px
     height: 22px
 
@@ -77,7 +77,7 @@ $highlight: rgb( 76, 182, 231 )
   +hide-text
   +float-left
   +clearfix
-  background: url( "/img/sprite/logo.png" ) no-repeat
+  background: image-url( "sprite/logo.png" ) no-repeat
   display: block
   width: 167px
   height: 114px
@@ -97,15 +97,15 @@ $highlight: rgb( 76, 182, 231 )
   display: block
   width: 350px
   height: 33px
-  border: 1px solid grey
+  border: 1px solid $grey
   border-radius: 5px
 
 #search-btn
   +hide-text
   +float-left
   +clearfix
-  background: url( "/img/sprite/search.png" ) no-repeat
-  background-position: top left 5px
+  background: image-url( "sprite/search.png" ) no-repeat
+  background-position: 5px 0
   display: block
   width: 85px
   height: 33px
@@ -137,7 +137,7 @@ $highlight: rgb( 76, 182, 231 )
   color: #a6aaae
   text-decoration: none
   &:hover, &:active
-    color: black
+    color: #000
 
 #new-request-form
   color: rgb( 76, 182, 231 )
@@ -145,8 +145,8 @@ $highlight: rgb( 76, 182, 231 )
 
 #body
   +clearfix
-  background: url( "/img/header-bg.png" ) no-repeat
-  background-position: top center
+  background: image-url( "header-bg.png" ) no-repeat
+  background-position: 50% 0
   width: 1060px
   padding: 60px 0 0
   margin: 0 auto
@@ -179,14 +179,14 @@ $highlight: rgb( 76, 182, 231 )
 .more-link
   font-family: $default-font
   font-size: 12px
-  color: grey
+  color: $grey
   text-decoration: none
   &:hover, &:active
-    border-bottom: 1px solid grey
+    border-bottom: 1px solid $grey
 
 #partner-img
   +hide-text
-  background: url( "/img/sidebar-photo.png" ) no-repeat
+  background: image-url( "sidebar-photo.png" ) no-repeat
   display: block
   width: 77px
   height: 101px
@@ -228,7 +228,7 @@ $highlight: rgb( 76, 182, 231 )
 .master-clip-link
   font-family: $default-font
   font-size: 13px
-  color: black
+  color: #000
   text-decoration: none
   &:hover, &:active
     text-decoration: underline
@@ -237,31 +237,31 @@ $highlight: rgb( 76, 182, 231 )
   clear: both
 
 #master-1
-  background: url( "/img/gallery-1.png" ) no-repeat
+  background: image-url( "gallery-1.png" ) no-repeat
 
 #master-2
-  background: url( "/img/gallery-2.png" ) no-repeat
+  background: image-url( "gallery-2.png" ) no-repeat
 
 #master-3
-  background: url( "/img/gallery-3.png" ) no-repeat
+  background: image-url( "gallery-3.png" ) no-repeat
 
 #master-4
-  background: url( "/img/gallery-4.png" ) no-repeat
+  background: image-url( "gallery-4.png" ) no-repeat
 
 #master-5
-  background: url( "/img/gallery-5.png" ) no-repeat
+  background: image-url( "gallery-5.png" ) no-repeat
 
 #master-6
-  background: url( "/img/gallery-6.png" ) no-repeat
+  background: image-url( "gallery-6.png" ) no-repeat
 
 #master-7
-  background: url( "/img/gallery-7.png" ) no-repeat
+  background: image-url( "gallery-7.png" ) no-repeat
 
 #master-8
-  background: url( "/img/gallery-8.png" ) no-repeat
+  background: image-url( "gallery-8.png" ) no-repeat
 
 #master-9
-  background: url( "/img/gallery-9.png" ) no-repeat
+  background: image-url( "gallery-9.png" ) no-repeat
 
 #right-column
   +float-left
@@ -282,7 +282,7 @@ $highlight: rgb( 76, 182, 231 )
 #request-form-block-new
   +clearfix
   +hide-text
-  background: url( "/img/sprite/need.png" ) no-repeat
+  background: image-url( "sprite/need.png" ) no-repeat
   background-position: top 10px center
   display: block
   width: 68px
@@ -303,7 +303,7 @@ $highlight: rgb( 76, 182, 231 )
 
 #link-yahoo-house
   +hide-text
-  background: url( "/img/sprite/yahoo.png" ) no-repeat
+  background: image-url( "sprite/yahoo.png" ) no-repeat
   background-position: top 10px center
   display: block
   width: 97px
@@ -324,7 +324,7 @@ $highlight: rgb( 76, 182, 231 )
 
 #footer
   +clearfix
-  background: url( "/img/footer-bg.png" ) no-repeat
+  background: image-url( "footer-bg.png" ) no-repeat
   background-position: top center
   padding: 20px 0
 
@@ -341,7 +341,7 @@ $highlight: rgb( 76, 182, 231 )
   text-decoration: none
   padding: 0 2px
   &:hover, &:active
-    color: black
+    color: #000
 
 #site-map
   +float-left
@@ -366,16 +366,16 @@ $highlight: rgb( 76, 182, 231 )
   height: 17px
 
 #sn-facebook
-  background: url( "/img/sprite/fb-logo.png" ) no-repeat
+  background: image-url( "sprite/fb-logo.png" ) no-repeat
 
 #sn-twitter
-  background: url( "/img/sprite/twitter-logo.png" ) no-repeat
+  background: image-url( "sprite/twitter-logo.png" ) no-repeat
 
 #sn-youtube
-  background: url( "/img/sprite/youtube-logo.png" ) no-repeat
+  background: image-url( "sprite/youtube-logo.png" ) no-repeat
 
 #sn-plurk
-  background: url( "/img/sprite/plurk-logo.png" ) no-repeat
+  background: image-url( "sprite/plurk-logo.png" ) no-repeat
   width: 18px
 
 #copyright
@@ -431,42 +431,42 @@ $highlight: rgb( 76, 182, 231 )
   display: block
 
 #m-nextmedia
-  background: url( "/img/sprite/media-1.png" ) no-repeat
+  background: image-url( "sprite/media-1.png" ) no-repeat
   width: 59px
   height: 22px
 
 #m-fm975
-  background: url( "/img/sprite/media-2.png" ) no-repeat
+  background: image-url( "sprite/media-2.png" ) no-repeat
   width: 109px
   height 22px
 
 #m-tech-orange
-  background: url( "/img/sprite/media-3.png" ) no-repeat
+  background: image-url( "sprite/media-3.png" ) no-repeat
   width: 100px
   height: 22px
 
 #m-tech-note
-  background: url( "/img/sprite/media-4.png" ) no-repeat
+  background: image-url( "sprite/media-4.png" ) no-repeat
   width: 111px
   height: 22px
 
 #m-cti-tv
-  background: url( "/img/sprite/media-5.png" ) no-repeat
+  background: image-url( "sprite/media-5.png" ) no-repeat
   width: 73px
   height: 22px
 
 #ps-yahoo
-  background: url( "/img/sprite/media-6.png" ) no-repeat
+  background: image-url( "sprite/media-6.png" ) no-repeat
   width: 93px
   height: 22px
 
 #ps-rakura
-  background: url( "/img/sprite/media-7.png" ) no-repeat
+  background: image-url( "sprite/media-7.png" ) no-repeat
   width: 126px
   height: 22px
 
 #ps-bid
-  background: url( "/img/sprite/media-8.png" ) no-repeat
+  background: image-url( "sprite/media-8.png" ) no-repeat
   width: 56px
   height: 22px
 
