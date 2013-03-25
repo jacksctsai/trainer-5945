@@ -4,96 +4,91 @@ title: 5945 呼叫師傅
 
 <div id="header-wrap">
   <div id="header">
-    <ul id="menu">
-      <li id="home" class="menu-item">
-        <h1>
-          <a href="#" id="menu-home" class="link-menu" title="Home">5945 呼叫師傅</a>
-        </h1>
+    <ul id="nav">
+      <li id="home" class="nav-item">
+        <a id="nav-home" class="link-nav" href="#" title="Home">5945 呼叫師傅</a>
       </li>
-      <li id="search" class="menu-item">
-        <h2>
-          <a href="#" id="menu-search" class="link-menu" title="搜尋師傅">搜尋師傅</a>
-        </h2>
+      <li id="search" class="nav-item">
+        <a id="nav-search" class="link-nav" href="#" title="搜尋師傅">搜尋師傅</a>
       </li>
-      <li id="filter" class="menu-item">
-        <h2>
-          <a href="#" id="menu-filter" class="link-menu" title="嚴選師傅">嚴選師傅</a>
-        </h2>
+      <li id="filter" class="nav-item">
+        <a id="nav-filter" class="link-nav" href="#" title="嚴選師傅">嚴選師傅</a>
       </li>
-      <li id="request-form" class="menu-item">
-        <h2>
-          <a href="#" id="menu-request-form" class="link-menu" title="填需求單">填需求單</a>
-        </h2>
+      <li id="request-form" class="nav-item">
+        <a id="nav-request-form" class="link-nav" href="#" title="填需求單">填需求單</a>
       </li>
-      <li id="wiki" class="menu-item">
-        <h2>
-          <a href="#" id="menu-wiki" class="link-menu" title="裝修百科">裝修百科</a>
-        </h2>
+      <li id="wiki" class="nav-item">
+        <a id="nav-wiki" class="link-nav" href="#" title="裝修百科">裝修百科</a>
       </li>
     </ul>
-    <a href="#" id="link-facebook-login">Login with Facebook</a>
+    <a id="link-facebook-login" href="#">Login with Facebook</a>
   </div>
 </div>
 <div id="search-panel">
-  <div id="search-panel-logo">
-    <a href="#" id="search-panel-logo-link" title="5945 呼叫師傅">5945 呼叫師傅 Logo</a>
-  </div>
+  <h1 id="search-panel-logo">
+    <a id="search-panel-logo-link" href="#" title="5945 呼叫師傅">5945 呼叫師傅 Logo</a>
+  </h1>
   <div id="search-panel-form">
     <p id="search-prompt">你要找什麼師傅？</p>
-    <form action="#" id="search-form">
-      <input type="text" id="search-box" placeholder="內湖 抓漏">
-      <a href="#" id="search-btn" title="搜尋師傅">搜尋師傅</a>
+    <form id="search-form" action="#">
+      <input id="search-box" type="text" placeholder="內湖 抓漏">
+      <a id="search-btn" href="#" title="搜尋師傅">搜尋師傅</a>
     </form>
     <div id="hot-title">熱門查詢：</div>
-    <div id="hot-keywords"><% data.keywords.each do |k| %><a href="#" class="keyword" title="<%= k %>"><%= k %></a> <% end %>... 或直接<a href="#" id="new-request-form" title="填需求單">填需求單</a></div>
+    <div id="hot-keywords"><% data.keywords.each do |k| %><a class="keyword" href="#" title="<%= k %>"><%= k %></a> <% end %>... 或直接<a id="new-request-form" href="#" title="填需求單">填需求單</a></div>
   </div>
 </div>
 <div id="main">
   <div id="left-column">
-    <div class="block" id="suggestion">
-      <div id="suggestion-title">好評回饋</div>
+    <div id="suggestion" class="block">
+      <h4 id="suggestion-title">好評回饋</h4>
       <div id="suggestion-content">
         <p>台北市內湖區的飲隆水電行，聯絡後反應快速，馬上解決本人漏水問題且收費合理，值得推薦給內湖的鄉親!!</p>
-        <p id="suggestion-user"><a href="#" id="suggestion-user-link" title="推薦">3D 於 3/20/2011 推薦</a></p>
+        <p id="suggestion-user">
+          <a id="suggestion-user-link" href="#" title="推薦">3D 於 3/20/2011 推薦</a>
+        </p>
       </div>
       <div class="block-footer">
-        <a href="#" class="more-link" title="More">更多好評回饋 ▸</a>
+        <a class="more-link" href="#" title="More">更多好評回饋 ▸</a>
       </div>
     </div>
     <div id="partner" class="block">
-      <a href="#" id="partner-img" alt="合作夥伴">合作夥伴－大衛麥可國際設計工程有限公司設計師：張常嫻</a>
-      <a href="#" id="partner-link" title="合作夥伴">大衛麥可國際設計工程有限公司設計師：張常嫻</a>
+      <a id="partner-img" href="#" alt="合作夥伴">合作夥伴－大衛麥可國際設計工程有限公司設計師：張常嫻</a>
+      <a id="partner-link" href="#" title="合作夥伴">大衛麥可國際設計工程有限公司設計師：張常嫻</a>
       <br>
-      <a href="#" id="partner-source-link" title="來源">(來源:樂屋網裝潢show)</a>
+      <a id="partner-source-link" href="#" title="來源">(來源:樂屋網裝潢show)</a>
     </div>
   </div>
   <div id="master">
-    <div id="master-title">嚴選師傅</div>
+    <h3 id="master-title">嚴選師傅</h3>
     <div id="masters">
       <% data.masters.each do |m| %>
-      <div id="<%= m.id %>" class="master-clip" href="#" title="<%= m.content %>">
-        <a href="#" class="master-clip-link" title="<%= m.content %>"><%= m.content %></a>
+      <div class="master-item">
+        <a href="#" class="master-clip-link" title="<%= m.content %>">
+          <img class="master-clip" src="/img/gallery-<%= m.id %>.png" alt="<%= m.content %>">
+        </a>
+        <a class="master-link" href="#" title="<%= m.content %>"><%= m.content %></a>
       </div>
       <% end %>
     </div>
     <div id="master-footer">
-      <a href="#" class="more-link" title="More">更多嚴選師傅 ▸</a>
+      <a class="more-link" href="#" title="More">更多嚴選師傅 ▸</a>
     </div>
   </div>
   <div id="right-column">
-    <div class="block" id="request-form-block">
-      <div id="request-form-block-title">填需求單</div>
+    <div id="request-form-block" class="block">
+      <h4 id="request-form-block-title">填需求單</h4>
       <div id="request-form-block-content">為了更便於大家找尋師傅，5945呼叫師傅提供大家直接填寫需求單，我們將根據您的需求直接推薦您相關工種的師傅。</div>
-      <a href="#" id="request-form-block-new" title="填需求單">填寫需求</a>
+      <a id="request-form-block-new" href="#" title="填需求單">填寫需求</a>
     </div>
-    <div class="block" id="reference">
-      <div id="reference-title">系列專文</div>
-      <div id="reference-content">5945呼叫師傅每週固定於<a href="#" class="normal-link" title="Yahoo房地產">Yahoo房地產</a>發表專文, 提供裝修相關的專文介紹：</div>
-      <a href="#" id="link-yahoo-house" title="Y!房地產專文">Y!房地產專文</a>
+    <div id="reference" class="block">
+      <h4 id="reference-title">系列專文</h4>
+      <div id="reference-content">5945呼叫師傅每週固定於<a class="normal-link" href="#" title="Yahoo房地產">Yahoo房地產</a>發表專文, 提供裝修相關的專文介紹：</div>
+      <a id="link-yahoo-house" href="#" title="Y!房地產專文">Y!房地產專文</a>
       <div id="reference-list">
         <% data.yahooposts.each do |p| %>
         <p>
-          <a href="#" class="reference-link" title="<%= p.content %>">[<%= p.date %>]<%= p.content %> ▸</a>
+          <a class="reference-link" href="#" title="<%= p.content %>">[<%= p.date %>]<%= p.content %> ▸</a>
         </p>
         <% end %>
       </div>
@@ -103,26 +98,26 @@ title: 5945 呼叫師傅
 <div id="footer">
   <div id="related-links">
     <div id="site-map">
-      <a href="#" id="rl-home" class="link-related" title="首頁">首頁</a>
-      <a href="#" id="rl-about" class="link-related" title="關於我們">關於我們</a>
-      <a href="#" id="rl-contact" class="link-related" title="聯絡我們">聯絡我們</a>
-      <a href="#" id="rl-terms" class="link-related" title="服務條款">服務條款</a>
-      <a href="#" id="rl-privacy" class="link-related" title="隱私權政策">隱私權政策</a>
-      <a href="#" id="rl-master-enlish" class="link-related" title="師傅刊登">師傅刊登</a>
-      <a href="#" id="rl-master-comment" class="link-related" title="評論師傅">評論師傅</a>
+      <a id="related-links-home" class="link-related" href="#" title="首頁">首頁</a>
+      <a id="related-links-about" class="link-related" href="#" title="關於我們">關於我們</a>
+      <a id="related-links-contact" class="link-related" href="#" title="聯絡我們">聯絡我們</a>
+      <a id="related-links-terms" class="link-related" href="#" title="服務條款">服務條款</a>
+      <a id="related-links-privacy" class="link-related" href="#" title="隱私權政策">隱私權政策</a>
+      <a id="related-links-master-enlish" class="link-related" href="#" title="師傅刊登">師傅刊登</a>
+      <a id="related-links-master-comment" class="link-related" href="#" title="評論師傅">評論師傅</a>
     </div>
     <div id="social-networks">
-      <div class="sn-item">
-        <a href="#" id="sn-facebook" class="link-sn" title="Facebook">Facebook</a>
+      <div class="social-networks-item">
+        <a id="social-networks-facebook" class="link-social-networks" href="#" title="Facebook">Facebook</a>
       </div>
-      <div class="sn-item">
-        <a href="#" id="sn-twitter" class="link-sn" title="Twitter">Twitter</a>
+      <div class="social-networks-item">
+        <a id="social-networks-twitter" class="link-social-networks" href="#" title="Twitter">Twitter</a>
       </div>
-      <div class="sn-item">
-        <a href="#" id="sn-youtube" class="link-sn" title="Youtube">Youtube</a>
+      <div class="social-networks-item">
+        <a id="social-networks-youtube" class="link-social-networks" href="#" title="Youtube">Youtube</a>
       </div>
-      <div class="sn-item">
-        <a href="#" id="sn-plurk" class="link-sn" title="Plurk">Plurk</a>
+      <div class="social-networks-item">
+        <a id="social-networks-plurk" class="link-social-networks" href="#" title="Plurk">Plurk</a>
       </div>
     </div>
   </div>
@@ -131,13 +126,13 @@ title: 5945 呼叫師傅
     <div id="media-reports">
       <p id="media-report-title">媒體報導</p>
       <% data.medias.each do |m| %>
-      <a href="#" id="m-<%= m.id %>" class="link-media" title="<%= m.name %>"><%= m.name %></a>
+      <a id="m-<%= m.id %>" class="link-media" href="#" title="<%= m.name %>"><%= m.name %></a>
       <% end %>
     </div>
     <div id="partnership">
       <p id="partnership-title">合作夥伴</p>
       <% data.partnerships.each do |p| %>
-      <a href="#" id="ps-<%= p.id %>" class="link-partnership" title="<%= p.name %>"><%= p.name %></a>
+      <a id="ps-<%= p.id %>" class="link-partnership" href="#" title="<%= p.name %>"><%= p.name %></a>
       <% end %>
     </div>
   </div>
